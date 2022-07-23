@@ -21,7 +21,7 @@ public class AuthenticationService : IAuthenticationService
         var user = _userRepository.GetUserByEmail(email);
         if (user is not null)
         {
-            throw new Exception();
+            throw new Exception("User already exists");
         }
 
         User createUser = new User
@@ -45,7 +45,7 @@ public class AuthenticationService : IAuthenticationService
         var user =_userRepository.GetUserByEmail(email);
         if(user == null)
         {
-            throw new KeyNotFoundException();
+            throw new KeyNotFoundException("No email found");
         }
         
         var token = _tokenGenrator.GenerateToken(user.Id, user.FirstName, user.LastName);

@@ -1,6 +1,7 @@
 using MyWebApplication.Api;
 using MyWeb.Application;
 using Web.Infrastructure;
+using MWebApplication.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -22,7 +23,7 @@ var app = builder.Build();
         app.UseSwagger();
         app.UseSwaggerUI();
     }
-
+    app.UseMiddleware<CustomErrorHandlingMiddleware>();
     app.UseAuthorization();
 
     app.MapControllers();
