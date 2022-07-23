@@ -1,0 +1,20 @@
+@hostName = http://localhost:5126
+
+POST {{hostName}}/Authentication/Register
+content-type:application/json;
+
+{
+    "firstName":"test",
+        "lastName": "MyName",
+        "email":"test@abv.bg",
+        "password": "2313123"
+}
+
+###
+POST {{hostName}}/Authentication/Login
+content-type:application/json;
+
+{
+        "email":"test@abv.bg",
+        "password": "2313123"
+}

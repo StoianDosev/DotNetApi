@@ -1,0 +1,12 @@
+/home/stoian/Projects/DotNetApi/WebLib.Domain/bin/Debug/net6.0/WebLib.Domain.deps.json
+/home/stoian/Projects/DotNetApi/WebLib.Domain/bin/Debug/net6.0/WebLib.Domain.dll
+/home/stoian/Projects/DotNetApi/WebLib.Domain/bin/Debug/net6.0/WebLib.Domain.pdb
+/home/stoian/Projects/DotNetApi/WebLib.Domain/obj/Debug/net6.0/WebLib.Domain.csproj.AssemblyReference.cache
+/home/stoian/Projects/DotNetApi/WebLib.Domain/obj/Debug/net6.0/WebLib.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/stoian/Projects/DotNetApi/WebLib.Domain/obj/Debug/net6.0/WebLib.Domain.AssemblyInfoInputs.cache
+/home/stoian/Projects/DotNetApi/WebLib.Domain/obj/Debug/net6.0/WebLib.Domain.AssemblyInfo.cs
+/home/stoian/Projects/DotNetApi/WebLib.Domain/obj/Debug/net6.0/WebLib.Domain.csproj.CoreCompileInputs.cache
+/home/stoian/Projects/DotNetApi/WebLib.Domain/obj/Debug/net6.0/WebLib.Domain.dll
+/home/stoian/Projects/DotNetApi/WebLib.Domain/obj/Debug/net6.0/refint/WebLib.Domain.dll
+/home/stoian/Projects/DotNetApi/WebLib.Domain/obj/Debug/net6.0/WebLib.Domain.pdb
+/home/stoian/Projects/DotNetApi/WebLib.Domain/obj/Debug/net6.0/ref/WebLib.Domain.dll

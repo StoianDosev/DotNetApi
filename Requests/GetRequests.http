@@ -1,0 +1,10 @@
+ @hostName = http://localhost:5126
+ {{hostName}}/WeatherForecast/MyForecast
+
+ 
+
+
+###
+
+POST {{hostName}}/WeatherForecast/Test
+content-type:application/json;
