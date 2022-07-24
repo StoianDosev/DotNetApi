@@ -1,6 +1,7 @@
 using System.Runtime.Serialization.Json;
 using System.Net;
 using System.Text.Json;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MWebApplication.Api.Middlewares;
 
@@ -32,6 +33,18 @@ public class CustomErrorHandlingMiddleware
         var result = JsonSerializer.Serialize(new {error = ex.Message});
         context.Response.ContentType = "application/json";
         context.Response.StatusCode = (int)code;
-        await context.Response.WriteAsync(result);
+
+        var problem = new ProblemDetails()
+        {
+            Title ="Error occured",
+            Detail = "some error",
+            Instance = "Authentication",
+            Status = (int)HttpStatusCode.InternalServerError,
+            Type = ""
+        };
+
+        problem.Extensions.Add("error", ex.Message);
+
+        await context.Response.WriteAsync(JsonSerializer.Serialize(problem));
     }
 }
