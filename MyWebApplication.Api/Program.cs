@@ -18,7 +18,7 @@ var app = builder.Build();
         app.UseSwaggerUI();
     }
     app.UseMiddleware<CustomErrorHandlingMiddleware>();
-    //app.UseAuthorization();
+    app.UseAuthorization();
 
     app.MapControllers();
 
