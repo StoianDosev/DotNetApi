@@ -5,13 +5,10 @@ using MWebApplication.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 {
-    // Add services to the container.
     builder.Services.AddMyWebApplication();
     builder.Services.AddWebInfrastructure(builder.Configuration);
     builder.Services.AddMyWebApi();
 };
-
-
 
 var app = builder.Build();
 {
@@ -21,7 +18,7 @@ var app = builder.Build();
         app.UseSwaggerUI();
     }
     app.UseMiddleware<CustomErrorHandlingMiddleware>();
-    app.UseAuthorization();
+    //app.UseAuthorization();
 
     app.MapControllers();
 
